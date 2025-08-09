@@ -1,0 +1,38 @@
+name: Work Item
+description: Track a specific unit of work
+labels: [work-item]
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Work Item Code
+      description: e.g., W1-01
+      placeholder: W1-01
+  - type: textarea
+    id: desc
+    attributes:
+      label: Description
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      options:
+        - Week 1
+        - Week 2
+        - Week 3
+        - Week 4
+        - Week 5
+        - Week 6
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - TODO
+        - DOING
+        - DONE
+        - BLOCKED
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
